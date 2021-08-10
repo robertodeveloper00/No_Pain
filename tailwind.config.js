@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'hero-bg': "url('img/hero-bg.png')",
+        'hero-bg': "url(img/hero-bg.jpg)",
+        'quienesSomos-bg': "url(img/quienesSomos-bg.png)",
       }),
 
       colors: {
@@ -17,13 +18,14 @@ module.exports = {
         'secondary-dark': '#70800d',
         black1: '#111111',
         black95: '#000000f2',
+        black85: '#000000d9',
         black60: '#00000099',
         black30: '#1111114d'
       },
 
       screens: {
-        '3xl': '1600px',
-        // => @media (min-width: 1600px) { ... }
+        '2xl': '1400px',
+        '3xl': '1700px'
       },
     },
 
@@ -62,10 +64,10 @@ module.exports = {
             maxWidth: '1240px',
           },
           '@screen 2xl': {
-            maxWidth: '1300px',
+            maxWidth: '1350px',
           },
           '@screen 3xl': {
-            maxWidth: '1520px',
+            maxWidth: '1550px',
           },
         }
       })
