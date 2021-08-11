@@ -27,6 +27,10 @@ module.exports = {
         '2xl': '1400px',
         '3xl': '1700px'
       },
+
+      zIndex: {
+        '-10': '-10',
+       }
     },
 
     container: {
