@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: theme => ({
         'hero-bg': "url(img/hero-bg.jpg)",
         'quienesSomos-bg': "url(img/quienesSomos-bg.png)",
+        'modoUso-bg': "url(img/modoUso-bg.png)"
       }),
 
       colors: {
