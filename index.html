@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="img/icons/mister-icon.png"/>
+    <link rel="icon" type="image/png" href="img/icons/mister-favicon.png"/>
     <link rel="stylesheet" href="/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NO PAIN</title>
@@ -11,7 +11,7 @@
     <div id="app">
       <header class="bg-hero-bg bg-cover bg-center">
         <section class="grid grid-auto-rows min-h-screen bg-gradient-to-r from-black95 to-black60 lg:via-black80 lg:to-black30 ">
-          <!-- NAVIGATION -->
+          <!-- NAVBAR -->
           <nav class="bg-white h-24 z-20">
             <div class="container px-4 sm:px-6 lg:px-8">
               <div class="flex items-center justify-between h-24">
@@ -22,7 +22,7 @@
   
                 <!-- NAVIGATION -->
                 <div class="hidden md:block md:ml-6">
-                  <div class="flex space-x-4 font-bold fon text-xs lg:text-base whitespace-nowrap"> 
+                  <div class="flex space-xxl font-bold fon text-xs lg:text-base whitespace-nowrap"> 
                     <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">QUIENES SOMOS</a>
                     <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">BENEFICIOS</a>
                     <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">MODO DE USO</a>
@@ -80,22 +80,21 @@
               <span class="block text-primary text-5xl md:text-6xl">CONCENTRATE</span> <br>
               <span class="block text-3xl md:text-4xl text-white">EN LOS <span class="text-primary text-5xl md:text-6xl">DETALLES</span></span>
             </h1>
+
             <p class="mt-3 px-5 md:px-0 text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem eget netus faucibus congue adipiscing auctor. Nunc, porttitor vestibulum volutpat eget cum dignissim. 
             </p>
 
             <!-- BUTTON -->
-            <div class="mt-5 sm:mt-8 md:flex md:justify-center lg:justify-start">
-              <div class="rounded-full shadow">
-                <a href="#" class="w-8/12 flex items-center justify-center mx-auto lg:mx-0 px-4 py-2 md:px-16 md:text-lg border border-transparent text-base font-medium rounded-full text-white bg-secondary hover:bg-secondary-dark whitespace-nowrap">Ver más</a>
-              </div>
-            </div>
+            <button type="button" class="inline-flex items-center px-10 py-1 mt-6 border border-transparent text-lg font-medium rounded-full shadow-sm text-white bg-secondary hover:bg-secondary-dark">
+              Ver Más
+            </button>
           </div>
         </section>
       </header>
 
       <main>
-      <!-- QUIENES SOMOS -->
+        <!-- QUIENES SOMOS -->
         <section class="bg-quienesSomos-bg bg-contain bg-left-top bg-no-repeat">
           <div class="container xl:grid xl:grid-cols-2 py-16 md:py-24 lg:py-28 px-10">
             <div class="self-center flex flex-col gap-4 mb-8 xl:mb-0 pr-0 xl:pr-10 2xl:pr-28 text-lg">
@@ -111,123 +110,222 @@
           </div>
         </section>
 
-      <!-- BENEFICIOS -->
-      <section class="text-white bg-black1 overflow-x-hidden">
-        <!-- Grid Container -->
-        <div class="flex flex-col xl:grid xl:grid-cols-2 py-16 md:py-24 xl:py-0">
-          <!-- Grid Child One -->
-          <!-- Image -->
-          <img class="md:mx-20 lg:mx-40 xl:mx-0 xl:pr-24 3xl:pr-32" src="img/beneficios-bg-faded.png" alt="Beneficios">
+        <!-- BENEFICIOS -->
+        <section class="text-white bg-black1 overflow-x-hidden">
+          <!-- Grid Container -->
+          <div class="flex flex-col xl:grid xl:grid-cols-2 py-16 md:py-24 xl:py-0">
+            <!-- Grid Child One -->
+            <!-- Image -->
+            <img class="md:mx-20 lg:mx-40 xl:mx-0 xl:pr-24 3xl:pr-32" src="img/beneficios-bg-faded.png" alt="Beneficios">
 
-          <!-- Grid Child Two -->
-          <div class="container flex flex-col xl:grid grid-cols-10 grid-rows-10 gap-12 3xl:py-28 px-6 self-center">
-            <!-- Heading -->
-            <h2 class="row-start-1 col-span-10 relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">BENEFICIOS<span class="absolute -top-14 -left-10 sm:-left-20 3xl:-top-20 3xl:-left-24 text-8xl 3xl:text-9xl text-white text-opacity-5">BENEFICIOS</span></h2>
+            <!-- Grid Child Two -->
+            <div class="container flex flex-col xl:grid grid-cols-10 grid-rows-10 gap-12 3xl:py-28 px-6 self-center">
+              <!-- Heading -->
+              <h2 class="row-start-1 col-span-10 relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">BENEFICIOS<span class="absolute -top-14 -left-10 sm:-left-20 3xl:-top-20 3xl:-left-24 text-8xl 3xl:text-9xl text-white text-opacity-5">BENEFICIOS</span></h2>
 
-            <!-- List -->
-            <ul class="row-start-2 col-span-8 flex flex-col gap-4 ml-8 mr-2 sm:mr-0 font-medium text-lg">
+              <!-- List -->
+              <ul class="row-start-2 col-span-8 flex flex-col gap-4 ml-8 mr-2 sm:mr-0 font-medium text-lg">
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
+                  <p>Proporciona de 1 a 4 horas sin dolor o moderado aplicándolo correctamente y según la permeablilidad de tu piel.</p>
+                </li>
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
+                  Permite relajarte más durante la sesión y colaborar en todo el proceso creativo del artista.
+                </li>
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
+                  Puedes aplicarla antes de la sesión e incluso con la piel abierta ya que no afecta la tonalidad de las tintas. 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODO DE USO -->
+        <section class="bg-modoUso-bg bg-contain sm:bg-auto bg-center sm:bg-right-top xl:bg-bottom bg-no-repeat overflow-x-hidden">
+          <!-- Grid Container -->
+          <div class="container flex flex-col xl:grid grid-cols-12 grid-rows-12 gap-12 px-6 py-16 md:py-24 lg:pt-24 lg:pb-16">
+            <!-- Grid Child One -->
+            <h2 class="col-start-2 col-span-12 relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">MODO <span class="inline-block">DE USO</span><span class="absolute -top-11 -left-10 3xl:-top-14 3xl:-left-12 text-8xl 3xl:text-9xl text-black text-opacity-10">MODO <span class="inline-block">DE USO</span></span></h2>
+
+            <!-- Grid Child Two -->
+            <ul class="row-start-2 col-span-7 self-center flex flex-col gap-6 ml-8 mr-2 sm:mr-0 font-medium text-xl">
               <li class="relative">
-                <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
-                <p>Proporciona de 1 a 4 horas sin dolor o moderado aplicándolo correctamente y según la permeablilidad de tu piel.</p>
+                <img class="absolute -top-5 -left-14 h-16 z-10" src="img/icons/manos-icon.png" alt="icono_producto">
+                <p>Antes de la aplicación lava las manos con jabón.</p>
+              </li>
+              <li class="relative">
+                <img class="absolute -top-5 -left-14 h-16" src="img/icons/razor-icon.png" alt="icono_producto">
+                <p>Limpia cuidadosamente la zona que deseas dormir y asegúrate de remover el vello.</p>
               </li>
               <li class="relative">
                 <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
-                Permite relajarte más durante la sesión y colaborar en todo el proceso creativo del artista.
+                <p>Aplica una capa de NO Pain de 2 a 3 mm de espesor.</p>
               </li>
               <li class="relative">
-                <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
-                Puedes aplicarla antes de la sesión e incluso con la piel abierta ya que no afecta la tonalidad de las tintas. 
+                <img class="absolute -top-5 -left-14 h-16" src="img/icons/plastico-icon.png" alt="icono_producto">
+                <p>Cubre la zona con papel plástico y espera 1 hora.</p>
+              </li>
+              <li class="relative">
+                <img class="absolute -top-5 -left-14 h-16" src="img/icons/stencil-icon.png" alt="icono_producto">
+                <p>El tatuador colocará el stencil.</p>
+              </li>
+              <li class="relative">
+                <img class="absolute -top-5 -left-14 h-16" src="img/icons/maquina-icon.png" alt="icono_producto">
+                <p>Comenzará por las líneas.</p>
+              </li>
+              <li class="relative">
+                <img class="absolute -top-5 -left-14 h-16" src="img/icons/alien-icon.png" alt="icono_producto">
+                <p>En el intermedio si sientes molestia, aplica una nueva capa y espera de 20 a 30 minutos para los colores y sombras.</p>
               </li>
             </ul>
+
+            <!-- Grid Child Three -->
+            <div class="row-start-2 col-start-8 col-span-6 grid grid-cols-2 grid-rows-2 gap-3 md:gap-6">
+              <img class="row-span-2 justify-self-end self-center" src="img/modoUso-1.png" alt="modoUso-1">
+              <img src="img/modoUso-2.png" alt="modoUso-2">
+              <img src="img/modoUso-3.png" alt="modoUso-3">
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- MODO DE USO -->
-      <section class="bg-modoUso-bg bg-contain sm:bg-auto bg-center sm:bg-right-top xl:bg-bottom bg-no-repeat overflow-x-hidden">
-        <!-- Grid Container -->
-        <div class="container flex flex-col xl:grid grid-cols-12 grid-rows-12 gap-12 px-6 py-16 md:py-24 lg:pt-24 lg:pb-16">
-          <!-- Grid Child One -->
-          <h2 class="col-start-2 col-span-12 relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">MODO <span class="inline-block">DE USO</span><span class="absolute -top-11 -left-10 3xl:-top-14 3xl:-left-12 text-8xl 3xl:text-9xl text-black text-opacity-10">MODO <span class="inline-block">DE USO</span></span></h2>
+        <!-- CONSEJOS -->
+        <section class="text-white bg-black1 overflow-x-hidden">
+          <!-- Grid Container -->
+          <div class="flex flex-col xl:grid xl:grid-cols-2 py-16 md:py-24 xl:py-0">
+            <!-- Grid Child One -->
+            <!-- Image -->
+            <img class="md:mx-20 lg:mx-40 xl:mx-0 xl:pr-24 3xl:pr-32" src="img/consejos-bg-faded.png" alt="Consejos">
 
-          <!-- Grid Child Two -->
-          <ul class="row-start-2 col-span-7 self-center flex flex-col gap-6 ml-8 mr-2 sm:mr-0 font-medium text-xl">
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16 z-10" src="img/icons/manos-icon.png" alt="icono_producto">
-              <p>Antes de la aplicación lava las manos con jabón.</p>
-            </li>
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16" src="img/icons/razor-icon.png" alt="icono_producto">
-              <p>Limpia cuidadosamente la zona que deseas dormir y asegúrate de remover el vello.</p>
-            </li>
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16" src="img/icons/producto-icon.png" alt="icono_producto">
-              <p>Aplica una capa de NO Pain de 2 a 3 mm de espesor.</p>
-            </li>
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16" src="img/icons/plastico-icon.png" alt="icono_producto">
-              <p>Cubre la zona con papel plástico y espera 1 hora.</p>
-            </li>
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16" src="img/icons/stencil-icon.png" alt="icono_producto">
-              <p>El tatuador colocará el stencil.</p>
-            </li>
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16" src="img/icons/maquina-icon.png" alt="icono_producto">
-              <p>Comenzará por las líneas.</p>
-            </li>
-            <li class="relative">
-              <img class="absolute -top-5 -left-14 h-16" src="img/icons/alien-icon.png" alt="icono_producto">
-              <p>En el intermedio si sientes molestia, aplica una nueva capa y espera de 20 a 30 minutos para los colores y sombras.</p>
-            </li>
-          </ul>
+            <!-- Grid Child Two -->
+            <div class="container flex flex-col xl:grid grid-cols-10 grid-rows-10 gap-12 3xl:py-28 px-6 self-center">
+              <!-- Heading -->
+              <h2 class="row-start-1 col-span-10 relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">CONSEJOS<span class="absolute -top-11 -left-10 sm:-left-12 3xl:-top-16 3xl:-left-14 text-8xl 3xl:text-9xl text-white text-opacity-5">CONSEJOS</span></h2>
 
-          <!-- Grid Child Three -->
-          <div class="row-start-2 col-start-8 col-span-6 grid grid-cols-2 grid-rows-2 gap-3 md:gap-6">
-            <img class="row-span-2 justify-self-end self-center" src="img/modoUso-1.png" alt="modoUso-1">
-            <img src="img/modoUso-2.png" alt="modoUso-2">
-            <img src="img/modoUso-3.png" alt="modoUso-3">
+              <!-- List -->
+              <ul class="row-start-2 col-span-8 flex flex-col gap-8 ml-8 mr-2 sm:mr-0 font-medium text-lg">
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
+                  <p>Prepara de forma correcta tu piel para que sea más permeable y receptiva al compuesto anestésico, puedes hacer una exfoliación para eliminar células muertas</p>
+                </li>
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
+                  Sigue los pasos para una correcta aplicación. 
+                </li>
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
+                  Realice una prueba de sensibilidad o alergia previa a su cita con el fin de evitar alguna reacción desfavorable.  
+                </li>
+                <li class="relative">
+                  <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
+                  Evite el contacto con los ojos. 
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- CONSEJOS -->
-      <section class="text-white bg-black1 overflow-x-hidden">
-        <!-- Grid Container -->
-        <div class="flex flex-col xl:grid xl:grid-cols-2 py-16 md:py-24 xl:py-0">
-          <!-- Grid Child One -->
-          <!-- Image -->
-          <img class="md:mx-20 lg:mx-40 xl:mx-0 xl:pr-24 3xl:pr-32" src="img/consejos-bg-faded.png" alt="Consejos">
+        <!-- PROVEEDORES -->
+        <section class="overflow-x-hidden">
+          <!-- Grid Container -->
+          <div class="container flex flex-col xl:grid grid-cols-12 grid-rows-12 gap-12 px-6 py-16 md:py-24 lg:pt-24 lg:pb-16">
+            <!-- Grid Child One -->
+            <h2 class="col-start-2 col-span-12 relative xl:self-start -mb-8 sm:-mb-0 font-display font-bold text-5xl sm:text-7xl 3xl:text-8xl  z-10">PROVEEDORES<span class="absolute -top-11 -left-10 3xl:-top-14 3xl:-left-12 text-8xl 3xl:text-9xl text-black text-opacity-10">PROVEEDORES</span></h2>
 
-          <!-- Grid Child Two -->
-          <div class="container flex flex-col xl:grid grid-cols-10 grid-rows-10 gap-12 3xl:py-28 px-6 self-center">
-            <!-- Heading -->
-            <h2 class="row-start-1 col-span-10 relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">CONSEJOS<span class="absolute -top-11 -left-10 sm:-left-12 3xl:-top-16 3xl:-left-14 text-8xl 3xl:text-9xl text-white text-opacity-5">CONSEJOS</span></h2>
+            <!-- Grid Child Two -->
+            <ul class="row-start-2 col-span-7 divide-y divide-gray-200 font-display">
+              <!-- Botones -->
+              <div class="flex gap-4 mx-auto mb-8">
+                <button type="button" class="inline-flex items-center px-10 py-2 mt-6 border border-transparent rounded-full shadow-sm font-paragraph font-bold text-lg sm:text-xl text-white bg-primary hover:bg-primary-dark">
+                  PANAMA
+                </button>
+                <button type="button" class="inline-flex items-center px-8 py-2 mt-6 border border-transparent rounded-full shadow-sm font-paragraph font-bold text-lg sm:text-xl text-white bg-black85 hover:bg-black">
+                  NICARAGUA
+                </button>
+              </div>
 
-            <!-- List -->
-            <ul class="row-start-2 col-span-8 flex flex-col gap-8 ml-8 mr-2 sm:mr-0 font-medium text-lg">
-              <li class="relative">
-                <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
-                <p>Prepara de forma correcta tu piel para que sea más permeable y receptiva al compuesto anestésico, puedes hacer una exfoliación para eliminar células muertas</p>
+              <!-- Lista -->
+              <li class="py-4 flex justify-between items-center">
+                <div class="ml-3">
+                  <p class="text-xl font-bold text-gray-900">ALAJUELA TATTOO SUPPLIES</p>
+                  <p class="text-sm font-semibold text-gray-500">ALAJUELA</p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+
+                <!-- Chevron Up for when needed -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                      </svg> -->
               </li>
-              <li class="relative">
-                <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
-                Sigue los pasos para una correcta aplicación. 
+            
+              <li class="py-4 flex justify-between items-center">
+                <div class="ml-3">
+                  <p class="text-xl font-bold text-gray-900">INKLUMINATI SUPPLIES</p>
+                  <p class="text-sm font-semibold text-gray-500">ALAJUELA</p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </li>
-              <li class="relative">
-                <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
-                Realice una prueba de sensibilidad o alergia previa a su cita con el fin de evitar alguna reacción desfavorable.  
+            
+              <li class="py-4 flex justify-between items-center">
+                <div class="ml-3">
+                  <p class="text-xl font-bold text-gray-900">TATTOO SUPPLIES</p>
+                  <p class="text-sm font-semibold text-gray-500">ALAJUELA</p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </li>
-              <li class="relative">
-                <img class="absolute -top-5 -left-14 h-16" src="img/icons/mister-icon.png" alt="icono_mister">
-                Evite el contacto con los ojos. 
+
+              <li class="py-4 flex justify-between items-center">
+                <div class="ml-3">
+                  <p class="text-xl font-bold text-gray-900">GOLDEN COBRA TATTOO ART</p>
+                  <p class="text-sm font-semibold text-gray-500">CARTAGO</p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </li>
+            
+              <li class="py-4 flex justify-between items-center">
+                <div class="ml-3">
+                  <p class="text-xl font-bold text-gray-900">NEW TRADITIONAL TATTOO STUDIO</p>
+                  <p class="text-sm font-semibold text-gray-500">CARTAGO</p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </li>
+            
+              <li class="py-4 flex justify-between items-center">
+                <div class="ml-3">
+                  <p class="text-xl font-bold text-gray-900">QUIJOTE TATTOO</p>
+                  <p class="text-sm font-semibold text-gray-500">CARTAGO</p>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
               </li>
             </ul>
+
+            <!-- Grid Child Three -->
+            <!-- Mapa -->
+            <div class="row-start-2 col-start-8 col-span-6 mx-auto px-2 sm:px-8">
+              <img src="img/map-placehodler.png" alt="Mapa">
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </main>
-
     </div>
     <script type="module" src="/main.js"></script>
   </body>
