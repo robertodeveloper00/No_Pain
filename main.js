@@ -38,52 +38,20 @@ const contactTel = document.querySelector('#telefono');
 const contactEmail = document.querySelector('#correo');
 const contactMessage = document.querySelector('#mensaje');
 
+const contactFormInputs = [contactName, contactTel, contactEmail, contactMessage];
 
-// Event Listeners
-contactName.addEventListener('input', function() {
-  if (contactName.validity.valid) {
-    contactName.classList.remove('error')
-    contactName.nextElementSibling.classList.remove('show')
-  }
-})
-contactTel.addEventListener('input', function() {
-  if (contactTel.validity.valid) {
-    contactTel.classList.remove('error')
-    contactTel.nextElementSibling.classList.remove('show')
-  }
-})
-contactEmail.addEventListener('input', function() {
-  if (contactEmail.validity.valid) {
-    contactEmail.classList.remove('error')
-    contactEmail.nextElementSibling.classList.remove('show')
-  }
-})
-contactMessage.addEventListener('input', function() {
-  if (contactMessage.validity.valid) {
-    contactMessage.classList.remove('error')
-    contactMessage.nextElementSibling.classList.remove('show')
-  }
-})
+const inputValidation = function (e) {
+  contactFormInputs.forEach(formInput => {
+    if(formInput.validity.valid) {
+      formInput.classList.remove('error');
+      formInput.nextElementSibling.classList.remove('show');
+    } else {
+      formInput.classList.add('error');
+      formInput.nextElementSibling.classList.add('show');
+      e.preventDefault();
+    }
+  })
+}
 
-contactForm.addEventListener('submit', function(e) {
-  if(!contactName.validity.valid) {
-  contactName.classList.add('error')
-  contactName.nextElementSibling.classList.add('show')
-  e.preventDefault();
-  }
-  if(!contactTel.validity.valid) {
-  contactTel.classList.add('error')
-  contactTel.nextElementSibling.classList.add('show')
-  e.preventDefault();
-  }
-  if(!contactEmail.validity.valid) {
-  contactEmail.classList.add('error')
-  contactEmail.nextElementSibling.classList.add('show')
-  e.preventDefault();
-  }
-  if(!contactMessage.validity.valid) {
-  contactMessage.classList.add('error')
-  contactMessage.nextElementSibling.classList.add('show')
-  e.preventDefault();
-  }
-})
+contactForm.addEventListener('input', inputValidation);
+contactForm.addEventListener('submit', inputValidation);
