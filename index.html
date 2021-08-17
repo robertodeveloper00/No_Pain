@@ -23,11 +23,11 @@
                 <!-- NAVIGATION -->
                 <div class="hidden md:block md:ml-6">
                   <div class="flex space-xxl font-bold fon text-xs lg:text-base whitespace-nowrap"> 
-                    <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">QUIENES SOMOS</a>
-                    <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">BENEFICIOS</a>
-                    <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">MODO DE USO</a>
-                    <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">CONSEJOS</a>
-                    <a href="#" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">CONTACTO</a>
+                    <a href="#quienesSomos" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">QUIENES SOMOS</a>
+                    <a href="#beneficios" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">BENEFICIOS</a>
+                    <a href="#modoDeUso" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">MODO DE USO</a>
+                    <a href="#consejos" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">CONSEJOS</a>
+                    <a href="#contacto" class="px-3 py-2 text-black1 hover:bg-secondary hover:text-white rounded-md">CONTACTO</a>
                   </div>
                 </div>
                 
@@ -36,23 +36,11 @@
                   <!-- Mobile menu button -->
                   <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span class="sr-only">Open main menu</span>
-                    <!--
-                      Icon when menu is closed.
-          
-                      Heroicon name: outline/menu
-          
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
+
                     <svg class="h-6 w-6" id="closed-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
-                    <!--
-                      Icon when menu is open.
           
-                      Heroicon name: outline/x
-          
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
                     <svg class="hidden h-6 w-6" id="open-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -64,17 +52,17 @@
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="hidden md:hidden bg-white" id="mobile-menu">
               <div class="px-2 pt-2 pb-3 space-y-1 text-center">
-                <a href="#" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Quienes Somos</a>
-                <a href="#" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beneficios</a>
-                <a href="#" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Modo de Uso</a>
-                <a href="#" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Consejos</a>
-                <a href="#" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+                <a href="#quienesSomos" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Quienes Somos</a>
+                <a href="#beneficios" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beneficios</a>
+                <a href="#modoDeUso" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Modo de Uso</a>
+                <a href="#consejos" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Consejos</a>
+                <a href="#contacto" class="bg-primary text-white hover:bg-secondary hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
               </div>
             </div>
           </nav>
 
           <!-- HERO -->
-          <div class="container self-start lg:pl-12 pt-4 text-center lg:text-left">
+          <div class="container self-start px-3 sm:px-0 lg:pl-12 pt-4 text-center lg:text-left">
             <h1 class="font-extrabold leading-3 md:leading-5">
               <span class="block text-3xl md:text-4xl text-white">OLVIDATE DEL <span class="text-white text-4xl md:text-5xl">DOLOR</span></span> <br>
               <span class="block text-primary text-5xl md:text-6xl">CONCENTRATE</span> <br>
@@ -95,7 +83,7 @@
 
       <main>
         <!-- QUIENES SOMOS -->
-        <section class="bg-quienesSomos-bg bg-contain bg-left-top bg-no-repeat">
+        <section class="bg-quienesSomos-bg bg-contain bg-left-top bg-no-repeat" id="quienesSomos">
           <div class="container xl:grid xl:grid-cols-2 py-16 md:py-24 lg:py-28 px-10">
             <div class="self-center flex flex-col gap-4 mb-8 xl:mb-0 pr-0 xl:pr-10 2xl:pr-28 text-lg">
               <p>
@@ -111,7 +99,7 @@
         </section>
 
         <!-- BENEFICIOS -->
-        <section class="text-white bg-black1 overflow-x-hidden">
+        <section class="text-white bg-black1 overflow-x-hidden" id="beneficios">
           <!-- Grid Container -->
           <div class="flex flex-col xl:grid xl:grid-cols-2 py-16 md:py-24 xl:py-0">
             <!-- Grid Child One -->
@@ -143,7 +131,7 @@
         </section>
 
         <!-- MODO DE USO -->
-        <section class="bg-modoUso-bg bg-contain sm:bg-auto bg-center sm:bg-right-top xl:bg-bottom bg-no-repeat overflow-x-hidden">
+        <section class="bg-modoUso-bg bg-contain sm:bg-auto bg-center sm:bg-right-top xl:bg-bottom bg-no-repeat overflow-x-hidden" id="modoDeUso">
           <!-- Grid Container -->
           <div class="container flex flex-col xl:grid grid-cols-12 grid-rows-12 gap-12 px-6 py-16 md:py-24 lg:pt-24 lg:pb-16">
             <!-- Grid Child One -->
@@ -191,7 +179,7 @@
         </section>
 
         <!-- CONSEJOS -->
-        <section class="text-white bg-black1 overflow-x-hidden">
+        <section class="text-white bg-black1 overflow-x-hidden" id="consejos">
           <!-- Grid Container -->
           <div class="flex flex-col xl:grid xl:grid-cols-2 py-16 md:py-24 xl:py-0">
             <!-- Grid Child One -->
@@ -227,7 +215,7 @@
         </section>
 
         <!-- PROVEEDORES -->
-        <section class="overflow-x-hidden">
+        <section class="overflow-x-hidden" id="proveedores">
           <!-- Grid Container -->
           <div class="container flex flex-col xl:grid grid-cols-12 grid-rows-12 gap-12 px-6 py-16 md:py-24 lg:pt-24 lg:pb-16">
             <!-- Grid Child One -->
@@ -325,8 +313,59 @@
             </div>
           </div>
         </section>
+
+        <!-- CONTACTO -->
+        <section class="text-white bg-contacto-bg bg-cover bg-center overflow-x-hidden" id="contacto">
+          <div class="py-20 bg-gradient-to-r from-black60 to-black60">
+            
+            <form class="container flex flex-col gap-16 px-10 text-2xl contact-form" action="#" novalidate>
+              <h2 class="container relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">CONTACTO<span class="absolute -top-11 -left-10 sm:-left-12 3xl:-top-16 3xl:-left-14 text-8xl 3xl:text-9xl text-white text-opacity-10">CONTACTO</span></h2>
+              <ul class="flex flex-col lg:flex-row justify-between gap-20 relative">
+                <li class="w-full lg:w-4/12 relative" data-error="Verifique la información">
+                  <label class="block mb-8" for="nombre">NOMBRE</label>
+                  <input class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" type="text" id="nombre" name="nombre" required>
+                  <p class="error-message absolute">Ingrese su nombre</p>
+                </li>
+            
+                <li class="w-full lg:w-4/12 relative" data-error="Verifique la información">
+                  <label class="block mb-8" for="telefono">TELEFONO</label>
+                  <input class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" type="tel" id="telefono" name="telefono" pattern="[0-9,-]{8,18}" required>
+                  <p class="error-message absolute">Ingrese su número</p>
+                </li>
+                
+                <li class="w-full lg:w-4/12 relative" data-error="Verifique la información">
+                  <label class="block mb-8" for="correo">CORREO</label>
+                  <input class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" type="email" id="correo" name="correo" required>
+                  <p class="error-message absolute">Ingrese su correo</p>
+                </li>
+              </ul>
+
+              <div class="relative" data-error="Verifique la información">
+                <label class="block mb-8" for="mensaje">MENSAJE</label>
+                <textarea class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" data-error="Verifique la información" id="mensaje" name="mensaje" required></textarea>
+                <p class="error-message absolute">Ingrese su mensaje</p>
+              </div>
+
+              <input class="self-center px-32 py-1 -mt-2 border border-transparent text-lg font-medium rounded-full shadow-sm text-white bg-secondary hover:bg-secondary-dark" type="submit" value="Enviar">
+            </form>
+          </div>
+        </section>
       </main>
+      <footer class="bg-black ">
+        <div class="container grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-0 items-end px-4 py-16 text-white">
+          <p class="text-gray-500">Todos los derechos reservados. No pain 2021.</p>
+          <img src="img/logo-footer@2x.png" alt="Logo-footer" class="w-72 justify-self-center">
+          <div class="justify-self-end">
+            <ul class="flex justify-end gap-4 pb-4">
+              <a href="https://www.tiktok.com/@nopaingel"><img src="img/icons/socialmedia-icons/tiktok-icon.svg" alt="noPain-tiktok" class="w-10"></a>
+              <a href="https://www.instagram.com/nopaingel"><img src="img/icons/socialmedia-icons/instagram-icon.svg" alt="noPain-instagram" class="w-10"></a>
+              <a href="https://www.facebook.com/nopaingel/"><img src="img/icons/socialmedia-icons/facebook-icon.svg" alt="noPain-facebook" class="w-10"></a>
+            </ul>
+            <a href="mailto:nopainnumbing@gmail.com">nopainnumbing@gmail.com</a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

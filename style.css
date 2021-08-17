@@ -5,6 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* RESETS */
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
 /* CUSTOM MOBILE MENU */  
 @keyframes fade-in {
     from {
@@ -70,3 +79,49 @@
     background-color: #5d690ba2;
 }
 
+/* PREVENTING STYLING FROM FORM AUTOFILL */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: white;
+}
+
+/* CUSTOM INPUT ERRORS */
+li input.error {
+    border-color: #DD0040;
+    
+}
+
+li input:valid {
+    border-color: white;
+    
+}
+
+textarea.error {
+    border-color: #DD0040;
+    
+}
+
+textarea:valid {
+    border-color: white;
+    
+}
+
+.error-message {
+    color: #DD0040;
+    font-size: 1rem;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
