@@ -318,39 +318,40 @@
         <section class="text-white bg-contacto-bg bg-cover bg-center overflow-x-hidden" id="contacto">
           <div class="py-20 bg-gradient-to-r from-black60 to-black60">
             
-            <form class="container flex flex-col gap-16 px-10 text-2xl contact-form" action="#" novalidate>
+            <form class="container flex flex-col gap-16 px-10 text-2xl contact-form" id="my-form" action="https://formspree.io/f/xoqypnlo" method="POST">
               <h2 class="container relative xl:self-start text-6xl sm:text-7xl 3xl:text-8xl font-display font-bold z-10">CONTACTO<span class="absolute -top-11 -left-10 sm:-left-12 3xl:-top-16 3xl:-left-14 text-8xl 3xl:text-9xl text-white text-opacity-10">CONTACTO</span></h2>
               <ul class="flex flex-col lg:flex-row justify-between gap-20 relative">
-                <li class="w-full lg:w-4/12 relative" data-error="Verifique la información">
+                <li class="w-full lg:w-4/12 relative">
                   <label class="block mb-8" for="nombre">NOMBRE</label>
                   <input class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" type="text" id="nombre" name="nombre" required>
                   <p class="error-message absolute">Ingrese su nombre</p>
                 </li>
             
-                <li class="w-full lg:w-4/12 relative" data-error="Verifique la información">
+                <li class="w-full lg:w-4/12 relative">
                   <label class="block mb-8" for="telefono">TELEFONO</label>
                   <input class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" type="tel" id="telefono" name="telefono" pattern="[0-9,-]{8,18}" required>
                   <p class="error-message absolute">Ingrese su número</p>
                 </li>
                 
-                <li class="w-full lg:w-4/12 relative" data-error="Verifique la información">
+                <li class="w-full lg:w-4/12 relative">
                   <label class="block mb-8" for="correo">CORREO</label>
                   <input class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" type="email" id="correo" name="correo" required>
                   <p class="error-message absolute">Ingrese su correo</p>
                 </li>
               </ul>
 
-              <div class="relative" data-error="Verifique la información">
+              <div class="relative">
                 <label class="block mb-8" for="mensaje">MENSAJE</label>
-                <textarea class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" data-error="Verifique la información" id="mensaje" name="mensaje" required></textarea>
+                <textarea class="w-full border-0 border-b-2 border-white appearance-none outline-none bg-transparent focus:ring-2 focus:ring-white" id="mensaje" name="mensaje" required></textarea>
                 <p class="error-message absolute">Ingrese su mensaje</p>
               </div>
 
-              <input class="self-center px-32 py-1 -mt-2 border border-transparent text-lg font-medium rounded-full shadow-sm text-white bg-secondary hover:bg-secondary-dark" type="submit" value="Enviar">
+              <button class="self-center px-32 py-1 -mt-2 border border-transparent text-lg font-medium rounded-full shadow-sm text-white bg-secondary hover:bg-secondary-dark" id="submit-btn" type="submit">Enviar</button>
             </form>
           </div>
         </section>
       </main>
+
       <footer class="bg-black ">
         <div class="container grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-0 items-end px-4 py-16 text-white">
           <p class="text-gray-500">Todos los derechos reservados. No pain 2021.</p>

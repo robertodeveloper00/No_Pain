@@ -30,7 +30,9 @@ hamBtn.addEventListener('click', () => {
 })
 
 ////////////////////
-// CONTACT FORM ERROR STYLING
+// CONTACT FORM
+
+// Contact Form Styling Errors
 // Selectors
 const contactForm = document.querySelector('.contact-form');
 const contactName = document.querySelector('#nombre');
@@ -38,7 +40,11 @@ const contactTel = document.querySelector('#telefono');
 const contactEmail = document.querySelector('#correo');
 const contactMessage = document.querySelector('#mensaje');
 
+const submitBtn = document.querySelector('#submit-btn');
+const submitSuccess = document.querySelector('#submit-success');
+
 const contactFormInputs = [contactName, contactTel, contactEmail, contactMessage];
+
 
 const inputValidation = function (e) {
   contactFormInputs.forEach(formInput => {
@@ -53,5 +59,6 @@ const inputValidation = function (e) {
   })
 }
 
+
 contactForm.addEventListener('input', inputValidation);
-contactForm.addEventListener('submit', inputValidation);
+
